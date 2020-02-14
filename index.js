@@ -15,7 +15,7 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 
 app.use('/dishes',dishRouter);
-app.use('/dishes:/dishId', dishRouter);
+// app.use('/dishes:/dishId', dishRouter);
 app.use('/promotions', promoRouter);
 app.use('/leadership', leaderRouter);
 

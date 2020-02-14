@@ -26,8 +26,8 @@ dishRouter.route('/')
 });
 
 
-
-dishRouter.route('/dishes')
+// This is the change I had to make tp support dishId Call
+dishRouter.route('/:dishId')
 .all((req,res, next ) => {
   res.statusCode = 200;
   res.setHeader('Content-type', 'text/plain');
